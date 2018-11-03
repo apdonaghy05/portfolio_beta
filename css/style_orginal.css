@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.wrap_1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.element {
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-flow: row wrap;
+}
+
+.col {
+  flex-flow: column wrap;
+}
+
+.content {
+  flex: 1 100%;
+}
+
+.structure-1 {
+  flex: 1 100%;
+}
+
+.a {
+  flex: 1 50%;
+  min-width: 300px;
+}
+
+.b {
+  flex: 1 50%;
+  min-width: 300px;
+}
+
+.structure-1-2-1 {
+  flex: 1 33.3333333333%;
+}
+
+.c,
+.d {
+  flex: 1 50%;
+  min-width: 300px;
+}
+
+.e {
+  flex: 1 66.6666666667%;
+  min-width: 300px;
+}
+
+.f {
+  flex: 1 100%;
+  min-width: 300px;
+}
+
+.a, .b, .e, .f {
+  min-height: 600px;
+}
+
+@media (max-width: 1450px) {
+  .a, .b, .c, .d, .e, .f {
+    min-height: 400px;
+  }
+}
+@media (max-width: 1100px) {
+  .a, .b, .c, .d, .e, .f {
+    flex: 1 50%;
+    min-height: 300px;
+  }
+
+  .col {
+    flex-flow: nowrap;
+  }
+}
+@media (max-width: 680px) {
+  .a, .b, .c, .d, .e, .f {
+    flex: 1 100%;
+    min-width: 100%;
+  }
+
+  .structure-1-2-1 {
+    flex: 1 33.3333333333%;
+    min-width: 50%;
+    flex-flow: row wrap;
+  }
+}
+
+
+
+.blue{
+
+  background-image: url("../images/gg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.grey{
+
+   background-image: url("../images/soccer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content{
+
+ background-color:dodgerblue;
+
+}
+

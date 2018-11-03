@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="design">
+    <meta name="author" content="Andrew Donaghy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,600i,800,800i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <title>animate</title>
+    <style>
+
+    .fade {
+
+    opacity: 0;
+    margin-top:2em;
+
+    }
+
+
+    .blue{
+      height:30em;
+      background-color:dodgerblue;
+    }
+
+     .green{
+      height:30em;
+      background-color:green;
+      width:33.333333%;
+    }
+
+      .orange{
+      height:30em;
+      background-color:orange;
+      width:33.333333%;
+    }
+
+      .grey{
+      height:30em;
+      background-color:lightgrey;
+      width:33.333333%;
+    }
+
+.black{
+  background-color:black;
+  height:20em;
+  margin-top:12em;
+  margin-bottom: 0px;
+}
+
+.flex{
+  display:flex;
+}
+
+
+
+    </style>
+
+  </head>
+ 
+
+   <body>
+
+<div class="animated fadeInUp blue">hello world</div>
+<div class="flex">
+<div class="fade green">hello world</div>
+<div class="fade orange">hello world</div>
+<div class="fade grey">hello world</div>
+</div>
+
+<div class="black"><div>
+
+
+
+
+    <script>
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1',
+                                  'margin-top':'0em'
+                                },400);
+              
+            }
+            
+        }); 
+    
+    });
+    
+});
+    </script>
+  </body>
+
+</html>
