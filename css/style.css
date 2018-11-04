@@ -337,6 +337,10 @@ footer a i{
   margin-right:9em;
 }
 
+.mar_right_small{
+  margin-right:1em;
+}
+
 footer a i:hover{
   color:#FF3E3A;
 }
@@ -347,6 +351,10 @@ footer a i:hover{
 
 .heroMargin{
   margin-bottom: 5em;
+}
+
+.heroMargin_2{
+  margin-bottom: 1em;
 }
 
 h1{
